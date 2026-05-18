@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+import ProductCard from "../components/ProductCard.astro";
+---
+
+<div class="container">
+
+  <header class="header">
+    <img src="/logo.png" class="logo" alt="Warp Fuel logo" />
+    <h1 class="title">WARP FUEL</h1>
+  </header>
+
+  <div class="grid">
+
+    <ProductCard
+      name="Warp Original"
+      avif="/warp1.avif"
+      webp="/warp1.webp"
+      jpg="/warp1.jpg"
+    />
+
+    <ProductCard
+      name="Warp Manzana"
+      avif="/warp2.avif"
+      webp="/warp2.webp"
+      jpg="/warp2.jpg"
+    />
+
+    <ProductCard
+      name="Warp Fresa"
+      avif="/warp3.avif"
+      webp="/warp3.webp"
+      jpg="/warp3.jpg"
+    />
+
+  </div>
+
+</div>
