@@ -2,17 +2,23 @@
 const { name, avif, webp, jpg } = Astro.props;
 ---
 
-<a href="#" class="card">
+<a href="/original" class="card">
 
   <picture>
     <source srcset={avif} type="image/avif" />
     <source srcset={webp} type="image/webp" />
-    <img src={jpg} alt={`Bebida energética ${name}`} />
+
+    <img src={jpg} alt={`Warp Fuel ${name}`} />
   </picture>
 
   <div class="info">
+
     <h3>{name}</h3>
-    <p>Siente la velocidad, desata tu poder</p>
+
+    <p>
+      Feel the speed. Unlock your power.
+    </p>
+
   </div>
 
 </a>
